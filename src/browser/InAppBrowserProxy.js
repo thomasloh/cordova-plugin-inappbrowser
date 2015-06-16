@@ -77,6 +77,7 @@ var IAB = {
             // "_blank" or anything else
             if (!browserWrap) {
                 browserWrap = document.createElement("div");
+                browserWrap.style.top = "43px";
                 browserWrap.style.position = "absolute";
                 browserWrap.style.borderWidth = "40px";
                 browserWrap.style.width = "calc(100% - 80px)";
@@ -201,7 +202,7 @@ var IAB = {
         var msg = 'Browser cordova-plugin-inappbrowser injectScriptFile is not yet implemented';
         console.warn(msg);
         fail && fail(msg);
-    }, 
+    },
 
     injectStyleCode: function (win, fail, args) {
         var msg = 'Browser cordova-plugin-inappbrowser injectStyleCode is not yet implemented';
